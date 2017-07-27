@@ -1,0 +1,15 @@
+PODS:
+  - LKZHelloWord (0.0.3)
+  - YTSlideMenu (0.2.0)
+
+DEPENDENCIES:
+  - LKZHelloWord (~> 0.0.3)
+  - YTSlideMenu (~> 0.2.0)
+
+SPEC CHECKSUMS:
+  LKZHelloWord: 778cab02e448801584d7c71def83e320c78dbb5b
+  YTSlideMenu: 247ab1150efa08ef8f965f9ab99e15f31f2c89e3
+
+PODFILE CHECKSUM: d1fff081ae2ca0b96c1fce40d28ad42af333ce24
+
+COCOAPODS: 1.2.1

@@ -1,0 +1,9 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/LKZHelloWord" "${PODS_ROOT}/Headers/Public/YTSlideMenu"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/LKZHelloWord" "$PODS_CONFIGURATION_BUILD_DIR/YTSlideMenu"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/LKZHelloWord" -isystem "${PODS_ROOT}/Headers/Public/YTSlideMenu"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"LKZHelloWord" -l"YTSlideMenu" -framework "Foundation" -framework "UIKit"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
