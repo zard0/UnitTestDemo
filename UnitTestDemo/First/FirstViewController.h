@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PersonalCenterViewModel.h"
 
 @interface FirstViewController : UIViewController
 
+@property (nonatomic, strong) PersonalCenterViewModel *personalCenterVM;
 
 @end
 
