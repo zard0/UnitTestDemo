@@ -7,9 +7,9 @@
 //
 
 #import "FirstViewController.h"
-#import "PersonalCenterViewController.h"
 
 @interface FirstViewController ()
+
 
 @end
 
@@ -17,18 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.personalCenterNavService = [[PersonalCenterNavigationService alloc] initWithNavigationController:self.navigationController];
+    self.personalCenterVM = [[PersonalCenterViewModel alloc] initWithUserId:@"123" navigationService:self.personalCenterNavService];
 }
 
-- (PersonalCenterViewModel *)personalCenterVM{
-    if (!_personalCenterVM) {
-        _personalCenterVM = [[PersonalCenterViewModel alloc] init];
-    }
-    return _personalCenterVM;
+- (void)dealloc{
+    self.personalCenterNavService = nil;
+    self.personalCenterVM = nil;
 }
+
 - (IBAction)tapNextPageButton:(id)sender {
-    PersonalCenterViewController *vc = [[PersonalCenterViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    [self.personalCenterVM toPersonalCenter];
 }
 
 @end

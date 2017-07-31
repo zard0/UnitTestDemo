@@ -10,11 +10,16 @@
 
 @implementation PersonalCenterViewModel
 
-- (void)toPersonalCenterWithUserId:(NSString *)userId{
-    
+- (instancetype)initWithUserId:(NSString *)userId navigationService:(PersonalCenterNavigationService *)service{
+    if (self = [super init]) {
+        _userId = userId;
+        _navigationService = service;
+    }
+    return self;
 }
+
 - (void)toPersonalCenter{
-    
+    [self.navigationService toDestinationControllerWithInfo:self];
 }
 
 @end

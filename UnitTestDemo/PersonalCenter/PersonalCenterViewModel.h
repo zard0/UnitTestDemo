@@ -7,15 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PersonalCenterNavigationService.h"
 
 @interface PersonalCenterViewModel : NSObject
 
+@property (nonatomic, copy, readonly) NSString *userId;
+/// 负责导航
+@property (nonatomic, weak, readonly) PersonalCenterNavigationService *navigationService;
+
+- (instancetype)initWithUserId:(NSString *)userId navigationService:(PersonalCenterNavigationService *)service;
+
 /**
  跳转到用户中心页面
-
- @param userId <#userId description#>
  */
-- (void)toPersonalCenterWithUserId:(NSString *)userId;
 - (void)toPersonalCenter;
 
 @end

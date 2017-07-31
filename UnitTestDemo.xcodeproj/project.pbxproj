@@ -23,7 +23,10 @@
 		0ACF516B1F2AC2BC00518C8C /* FirstViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF516A1F2AC2BC00518C8C /* FirstViewControllerTests.m */; };
 		0AD203D11F2AC9F600721F5D /* UIButton+TestingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD203D01F2AC9F600721F5D /* UIButton+TestingHelper.m */; };
 		0AD203D41F2ADB0700721F5D /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD203D31F2ADB0700721F5D /* CustomViewController.m */; };
-		0AD203D71F2B189C00721F5D /* PersonalCenterViewModel+TestingHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD203D61F2B189C00721F5D /* PersonalCenterViewModel+TestingHelp.m */; };
+		0ADCC5751F2F086000BCE5B0 /* PersonalCenterViewModelMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCC5741F2F086000BCE5B0 /* PersonalCenterViewModelMock.m */; };
+		0ADCC57A1F2F138600BCE5B0 /* PersonalCenterNavigationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCC5791F2F138600BCE5B0 /* PersonalCenterNavigationService.m */; };
+		0ADCC57D1F2F15FB00BCE5B0 /* PersonalCenterNavigationServiceMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCC57C1F2F15FB00BCE5B0 /* PersonalCenterNavigationServiceMock.m */; };
+		0ADCC5801F2F35CD00BCE5B0 /* UINavigationControllerMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCC57F1F2F35CD00BCE5B0 /* UINavigationControllerMock.m */; };
 		DEC06B9AB3EA70541A6372E7 /* libPods-UnitTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB8F622DD47772FB695AE92 /* libPods-UnitTestDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -69,8 +72,14 @@
 		0AD203D01F2AC9F600721F5D /* UIButton+TestingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TestingHelper.m"; sourceTree = "<group>"; };
 		0AD203D21F2ADB0700721F5D /* CustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
 		0AD203D31F2ADB0700721F5D /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
-		0AD203D51F2B189C00721F5D /* PersonalCenterViewModel+TestingHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PersonalCenterViewModel+TestingHelp.h"; sourceTree = "<group>"; };
-		0AD203D61F2B189C00721F5D /* PersonalCenterViewModel+TestingHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PersonalCenterViewModel+TestingHelp.m"; sourceTree = "<group>"; };
+		0ADCC5731F2F086000BCE5B0 /* PersonalCenterViewModelMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCenterViewModelMock.h; sourceTree = "<group>"; };
+		0ADCC5741F2F086000BCE5B0 /* PersonalCenterViewModelMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCenterViewModelMock.m; sourceTree = "<group>"; };
+		0ADCC5781F2F138600BCE5B0 /* PersonalCenterNavigationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCenterNavigationService.h; sourceTree = "<group>"; };
+		0ADCC5791F2F138600BCE5B0 /* PersonalCenterNavigationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCenterNavigationService.m; sourceTree = "<group>"; };
+		0ADCC57B1F2F15FB00BCE5B0 /* PersonalCenterNavigationServiceMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCenterNavigationServiceMock.h; sourceTree = "<group>"; };
+		0ADCC57C1F2F15FB00BCE5B0 /* PersonalCenterNavigationServiceMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCenterNavigationServiceMock.m; sourceTree = "<group>"; };
+		0ADCC57E1F2F35CD00BCE5B0 /* UINavigationControllerMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINavigationControllerMock.h; sourceTree = "<group>"; };
+		0ADCC57F1F2F35CD00BCE5B0 /* UINavigationControllerMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINavigationControllerMock.m; sourceTree = "<group>"; };
 		DBB8F622DD47772FB695AE92 /* libPods-UnitTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UnitTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE498CF183497058852340E5 /* Pods-UnitTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTestDemo/Pods-UnitTestDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +119,8 @@
 				0A41725E1F2A01FE00CB61A3 /* PersonalCenterViewController.m */,
 				0A41725F1F2A01FE00CB61A3 /* PersonalCenterViewModel.h */,
 				0A4172601F2A01FE00CB61A3 /* PersonalCenterViewModel.m */,
+				0ADCC5781F2F138600BCE5B0 /* PersonalCenterNavigationService.h */,
+				0ADCC5791F2F138600BCE5B0 /* PersonalCenterNavigationService.m */,
 			);
 			path = PersonalCenter;
 			sourceTree = "<group>";
@@ -186,12 +197,16 @@
 			isa = PBXGroup;
 			children = (
 				0ACF516A1F2AC2BC00518C8C /* FirstViewControllerTests.m */,
+				0ADCC5731F2F086000BCE5B0 /* PersonalCenterViewModelMock.h */,
+				0ADCC5741F2F086000BCE5B0 /* PersonalCenterViewModelMock.m */,
+				0ADCC57B1F2F15FB00BCE5B0 /* PersonalCenterNavigationServiceMock.h */,
+				0ADCC57C1F2F15FB00BCE5B0 /* PersonalCenterNavigationServiceMock.m */,
+				0ADCC57E1F2F35CD00BCE5B0 /* UINavigationControllerMock.h */,
+				0ADCC57F1F2F35CD00BCE5B0 /* UINavigationControllerMock.m */,
 				0A4172781F2A0E8C00CB61A3 /* UIView+TestingHelper.h */,
 				0A4172791F2A0E8C00CB61A3 /* UIView+TestingHelper.m */,
 				0AD203CF1F2AC9F600721F5D /* UIButton+TestingHelper.h */,
 				0AD203D01F2AC9F600721F5D /* UIButton+TestingHelper.m */,
-				0AD203D51F2B189C00721F5D /* PersonalCenterViewModel+TestingHelp.h */,
-				0AD203D61F2B189C00721F5D /* PersonalCenterViewModel+TestingHelp.m */,
 				0A4172761F2A07D600CB61A3 /* UnitTestDemoTests.m */,
 				0A5EC1B91F2990000030844F /* Info.plist */,
 			);
@@ -370,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ADCC57A1F2F138600BCE5B0 /* PersonalCenterNavigationService.m in Sources */,
 				0A41726E1F2A01FE00CB61A3 /* TopListViewController.m in Sources */,
 				0A41726C1F2A01FE00CB61A3 /* SecondViewController.m in Sources */,
 				0A41726B1F2A01FE00CB61A3 /* PersonalCenterViewModel.m in Sources */,
@@ -387,10 +403,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A4172771F2A07D600CB61A3 /* UnitTestDemoTests.m in Sources */,
+				0ADCC5801F2F35CD00BCE5B0 /* UINavigationControllerMock.m in Sources */,
+				0ADCC57D1F2F15FB00BCE5B0 /* PersonalCenterNavigationServiceMock.m in Sources */,
 				0ACF516B1F2AC2BC00518C8C /* FirstViewControllerTests.m in Sources */,
 				0AD203D11F2AC9F600721F5D /* UIButton+TestingHelper.m in Sources */,
-				0AD203D71F2B189C00721F5D /* PersonalCenterViewModel+TestingHelp.m in Sources */,
 				0A41727A1F2A0E8C00CB61A3 /* UIView+TestingHelper.m in Sources */,
+				0ADCC5751F2F086000BCE5B0 /* PersonalCenterViewModelMock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
