@@ -18,6 +18,14 @@
     return self;
 }
 
+- (instancetype)initWithApiService:(id<ApiServiceProtocol>)apiService navigationService:(PersonalCenterNavigationService *)navService{
+    if (self = [super init]) {
+        _apiService = apiService;
+        _navigationService = navService;
+    }
+    return self;
+}
+
 - (void)toPersonalCenter{
     [self.navigationService toDestinationControllerWithInfo:self];
 }

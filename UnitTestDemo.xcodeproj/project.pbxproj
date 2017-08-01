@@ -15,6 +15,7 @@
 		0A41726E1F2A01FE00CB61A3 /* TopListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4172681F2A01FE00CB61A3 /* TopListViewController.m */; };
 		0A4172771F2A07D600CB61A3 /* UnitTestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4172761F2A07D600CB61A3 /* UnitTestDemoTests.m */; };
 		0A41727A1F2A0E8C00CB61A3 /* UIView+TestingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4172791F2A0E8C00CB61A3 /* UIView+TestingHelper.m */; };
+		0A4659C41F308E460082AFE6 /* PersonalCenterApiTestData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A4659C31F308E460082AFE6 /* PersonalCenterApiTestData.plist */; };
 		0A5EC19C1F298FFF0030844F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5EC19B1F298FFF0030844F /* main.m */; };
 		0A5EC19F1F298FFF0030844F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5EC19E1F298FFF0030844F /* AppDelegate.m */; };
 		0A5EC1A81F298FFF0030844F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5EC1A61F298FFF0030844F /* Main.storyboard */; };
@@ -27,6 +28,11 @@
 		0ADCC57A1F2F138600BCE5B0 /* PersonalCenterNavigationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCC5791F2F138600BCE5B0 /* PersonalCenterNavigationService.m */; };
 		0ADCC57D1F2F15FB00BCE5B0 /* PersonalCenterNavigationServiceMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCC57C1F2F15FB00BCE5B0 /* PersonalCenterNavigationServiceMock.m */; };
 		0ADCC5801F2F35CD00BCE5B0 /* UINavigationControllerMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCC57F1F2F35CD00BCE5B0 /* UINavigationControllerMock.m */; };
+		0AEB6E261F300E3A00F739AD /* PersonalCenterViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB6E251F300E3A00F739AD /* PersonalCenterViewControllerTests.m */; };
+		0AEB6E2D1F301B9000F739AD /* PersonalCenterApiServiceMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB6E2C1F301B9000F739AD /* PersonalCenterApiServiceMock.m */; };
+		0AEB6E311F30207500F739AD /* PersonalCenterApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB6E301F30207500F739AD /* PersonalCenterApiService.m */; };
+		0AEB6E391F30333000F739AD /* PersonalCenterViewControllerMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB6E381F30333000F739AD /* PersonalCenterViewControllerMock.m */; };
+		0AEB6E3F1F30661A00F739AD /* NSObject+Mock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB6E3E1F30661A00F739AD /* NSObject+Mock.m */; };
 		DEC06B9AB3EA70541A6372E7 /* libPods-UnitTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB8F622DD47772FB695AE92 /* libPods-UnitTestDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +63,7 @@
 		0A4172761F2A07D600CB61A3 /* UnitTestDemoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitTestDemoTests.m; sourceTree = "<group>"; };
 		0A4172781F2A0E8C00CB61A3 /* UIView+TestingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TestingHelper.h"; sourceTree = "<group>"; };
 		0A4172791F2A0E8C00CB61A3 /* UIView+TestingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TestingHelper.m"; sourceTree = "<group>"; };
+		0A4659C31F308E460082AFE6 /* PersonalCenterApiTestData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PersonalCenterApiTestData.plist; sourceTree = "<group>"; };
 		0A5EC1971F298FFF0030844F /* UnitTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5EC19B1F298FFF0030844F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A5EC19D1F298FFF0030844F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +87,18 @@
 		0ADCC57C1F2F15FB00BCE5B0 /* PersonalCenterNavigationServiceMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCenterNavigationServiceMock.m; sourceTree = "<group>"; };
 		0ADCC57E1F2F35CD00BCE5B0 /* UINavigationControllerMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINavigationControllerMock.h; sourceTree = "<group>"; };
 		0ADCC57F1F2F35CD00BCE5B0 /* UINavigationControllerMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINavigationControllerMock.m; sourceTree = "<group>"; };
+		0AEB6E251F300E3A00F739AD /* PersonalCenterViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCenterViewControllerTests.m; sourceTree = "<group>"; };
+		0AEB6E2B1F301B9000F739AD /* PersonalCenterApiServiceMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCenterApiServiceMock.h; sourceTree = "<group>"; };
+		0AEB6E2C1F301B9000F739AD /* PersonalCenterApiServiceMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCenterApiServiceMock.m; sourceTree = "<group>"; };
+		0AEB6E2E1F301F7200F739AD /* ApiServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiServiceProtocol.h; sourceTree = "<group>"; };
+		0AEB6E2F1F30207500F739AD /* PersonalCenterApiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCenterApiService.h; sourceTree = "<group>"; };
+		0AEB6E301F30207500F739AD /* PersonalCenterApiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCenterApiService.m; sourceTree = "<group>"; };
+		0AEB6E351F302AAA00F739AD /* GlobalConfigs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalConfigs.h; sourceTree = "<group>"; };
+		0AEB6E361F302B1C00F739AD /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0AEB6E371F30333000F739AD /* PersonalCenterViewControllerMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCenterViewControllerMock.h; sourceTree = "<group>"; };
+		0AEB6E381F30333000F739AD /* PersonalCenterViewControllerMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCenterViewControllerMock.m; sourceTree = "<group>"; };
+		0AEB6E3D1F30661A00F739AD /* NSObject+Mock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Mock.h"; sourceTree = "<group>"; };
+		0AEB6E3E1F30661A00F739AD /* NSObject+Mock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Mock.m"; sourceTree = "<group>"; };
 		DBB8F622DD47772FB695AE92 /* libPods-UnitTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UnitTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE498CF183497058852340E5 /* Pods-UnitTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTestDemo/Pods-UnitTestDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +140,9 @@
 				0A4172601F2A01FE00CB61A3 /* PersonalCenterViewModel.m */,
 				0ADCC5781F2F138600BCE5B0 /* PersonalCenterNavigationService.h */,
 				0ADCC5791F2F138600BCE5B0 /* PersonalCenterNavigationService.m */,
+				0AEB6E2E1F301F7200F739AD /* ApiServiceProtocol.h */,
+				0AEB6E2F1F30207500F739AD /* PersonalCenterApiService.h */,
+				0AEB6E301F30207500F739AD /* PersonalCenterApiService.m */,
 			);
 			path = PersonalCenter;
 			sourceTree = "<group>";
@@ -168,6 +190,7 @@
 		0A5EC1991F298FFF0030844F /* UnitTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0AEB6E341F302A9A00F739AD /* Configs */,
 				0A4172591F2A01FE00CB61A3 /* First */,
 				0A41725C1F2A01FE00CB61A3 /* PersonalCenter */,
 				0A4172611F2A01FE00CB61A3 /* Second */,
@@ -196,21 +219,70 @@
 		0A5EC1B61F2990000030844F /* UnitTestDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				0ACF516A1F2AC2BC00518C8C /* FirstViewControllerTests.m */,
-				0ADCC5731F2F086000BCE5B0 /* PersonalCenterViewModelMock.h */,
-				0ADCC5741F2F086000BCE5B0 /* PersonalCenterViewModelMock.m */,
-				0ADCC57B1F2F15FB00BCE5B0 /* PersonalCenterNavigationServiceMock.h */,
-				0ADCC57C1F2F15FB00BCE5B0 /* PersonalCenterNavigationServiceMock.m */,
-				0ADCC57E1F2F35CD00BCE5B0 /* UINavigationControllerMock.h */,
-				0ADCC57F1F2F35CD00BCE5B0 /* UINavigationControllerMock.m */,
-				0A4172781F2A0E8C00CB61A3 /* UIView+TestingHelper.h */,
-				0A4172791F2A0E8C00CB61A3 /* UIView+TestingHelper.m */,
-				0AD203CF1F2AC9F600721F5D /* UIButton+TestingHelper.h */,
-				0AD203D01F2AC9F600721F5D /* UIButton+TestingHelper.m */,
+				0AEB6E271F301A4B00F739AD /* PersonalCenter */,
+				0AEB6E2A1F301ABB00F739AD /* CommonMocks */,
+				0AEB6E291F301AA600F739AD /* First */,
+				0AEB6E281F301A7C00F739AD /* Helpers */,
 				0A4172761F2A07D600CB61A3 /* UnitTestDemoTests.m */,
 				0A5EC1B91F2990000030844F /* Info.plist */,
 			);
 			path = UnitTestDemoTests;
+			sourceTree = "<group>";
+		};
+		0AEB6E271F301A4B00F739AD /* PersonalCenter */ = {
+			isa = PBXGroup;
+			children = (
+				0A4659C31F308E460082AFE6 /* PersonalCenterApiTestData.plist */,
+				0AEB6E251F300E3A00F739AD /* PersonalCenterViewControllerTests.m */,
+				0AEB6E371F30333000F739AD /* PersonalCenterViewControllerMock.h */,
+				0AEB6E381F30333000F739AD /* PersonalCenterViewControllerMock.m */,
+				0ADCC5731F2F086000BCE5B0 /* PersonalCenterViewModelMock.h */,
+				0ADCC5741F2F086000BCE5B0 /* PersonalCenterViewModelMock.m */,
+				0ADCC57B1F2F15FB00BCE5B0 /* PersonalCenterNavigationServiceMock.h */,
+				0ADCC57C1F2F15FB00BCE5B0 /* PersonalCenterNavigationServiceMock.m */,
+				0AEB6E2B1F301B9000F739AD /* PersonalCenterApiServiceMock.h */,
+				0AEB6E2C1F301B9000F739AD /* PersonalCenterApiServiceMock.m */,
+			);
+			name = PersonalCenter;
+			sourceTree = "<group>";
+		};
+		0AEB6E281F301A7C00F739AD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A4172781F2A0E8C00CB61A3 /* UIView+TestingHelper.h */,
+				0A4172791F2A0E8C00CB61A3 /* UIView+TestingHelper.m */,
+				0AD203CF1F2AC9F600721F5D /* UIButton+TestingHelper.h */,
+				0AD203D01F2AC9F600721F5D /* UIButton+TestingHelper.m */,
+				0AEB6E3D1F30661A00F739AD /* NSObject+Mock.h */,
+				0AEB6E3E1F30661A00F739AD /* NSObject+Mock.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		0AEB6E291F301AA600F739AD /* First */ = {
+			isa = PBXGroup;
+			children = (
+				0ACF516A1F2AC2BC00518C8C /* FirstViewControllerTests.m */,
+			);
+			name = First;
+			sourceTree = "<group>";
+		};
+		0AEB6E2A1F301ABB00F739AD /* CommonMocks */ = {
+			isa = PBXGroup;
+			children = (
+				0ADCC57E1F2F35CD00BCE5B0 /* UINavigationControllerMock.h */,
+				0ADCC57F1F2F35CD00BCE5B0 /* UINavigationControllerMock.m */,
+			);
+			name = CommonMocks;
+			sourceTree = "<group>";
+		};
+		0AEB6E341F302A9A00F739AD /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				0AEB6E351F302AAA00F739AD /* GlobalConfigs.h */,
+				0AEB6E361F302B1C00F739AD /* PrefixHeader.pch */,
+			);
+			path = Configs;
 			sourceTree = "<group>";
 		};
 		453CCA19115579E066B6C6A0 /* Frameworks */ = {
@@ -327,6 +399,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4659C41F308E460082AFE6 /* PersonalCenterApiTestData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +467,7 @@
 				0A5EC19F1F298FFF0030844F /* AppDelegate.m in Sources */,
 				0A41726A1F2A01FE00CB61A3 /* PersonalCenterViewController.m in Sources */,
 				0A4172691F2A01FE00CB61A3 /* FirstViewController.m in Sources */,
+				0AEB6E311F30207500F739AD /* PersonalCenterApiService.m in Sources */,
 				0A5EC19C1F298FFF0030844F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,8 +481,12 @@
 				0ADCC57D1F2F15FB00BCE5B0 /* PersonalCenterNavigationServiceMock.m in Sources */,
 				0ACF516B1F2AC2BC00518C8C /* FirstViewControllerTests.m in Sources */,
 				0AD203D11F2AC9F600721F5D /* UIButton+TestingHelper.m in Sources */,
+				0AEB6E261F300E3A00F739AD /* PersonalCenterViewControllerTests.m in Sources */,
 				0A41727A1F2A0E8C00CB61A3 /* UIView+TestingHelper.m in Sources */,
+				0AEB6E3F1F30661A00F739AD /* NSObject+Mock.m in Sources */,
 				0ADCC5751F2F086000BCE5B0 /* PersonalCenterViewModelMock.m in Sources */,
+				0AEB6E2D1F301B9000F739AD /* PersonalCenterApiServiceMock.m in Sources */,
+				0AEB6E391F30333000F739AD /* PersonalCenterViewControllerMock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +620,8 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				DEVELOPMENT_TEAM = QTR3NT98RR;
 				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/UnitTestDemo/Configs/PrefixHeader.pch";
 				INFOPLIST_FILE = UnitTestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -558,6 +638,8 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				DEVELOPMENT_TEAM = QTR3NT98RR;
 				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/UnitTestDemo/Configs/PrefixHeader.pch";
 				INFOPLIST_FILE = UnitTestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

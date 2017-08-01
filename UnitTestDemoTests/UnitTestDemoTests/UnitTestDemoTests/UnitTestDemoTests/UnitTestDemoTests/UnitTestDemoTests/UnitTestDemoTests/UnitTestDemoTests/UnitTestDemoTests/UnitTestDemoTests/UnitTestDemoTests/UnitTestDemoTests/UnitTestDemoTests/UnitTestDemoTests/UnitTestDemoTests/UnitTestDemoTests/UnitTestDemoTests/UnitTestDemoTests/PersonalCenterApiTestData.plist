@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>100</key>
+	<dict>
+		<key>Data</key>
+		<dict>
+			<key>UserName</key>
+			<string>用户100</string>
+			<key>UserDesc</key>
+			<string>他很懒，什么也没写。</string>
+			<key>IsMale</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>101</key>
+	<dict>
+		<key>Data</key>
+		<dict>
+			<key>UserName</key>
+			<string>用户101</string>
+			<key>UserDesc</key>
+			<string>她很懒，什么也没写。</string>
+			<key>IsMale</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>102</key>
+	<dict>
+		<key>Data</key>
+		<dict>
+			<key>UserName</key>
+			<string>用户102</string>
+			<key>UserDesc</key>
+			<string>美丽的天气，精神好。</string>
+			<key>IsMale</key>
+			<false/>
+		</dict>
+	</dict>
+</dict>
+</plist>

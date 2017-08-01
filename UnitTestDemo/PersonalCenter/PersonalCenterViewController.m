@@ -8,9 +8,12 @@
 
 #import "PersonalCenterViewController.h"
 
-@interface PersonalCenterViewController (){
-    PersonalCenterViewModel *_viewModel;
-}
+@interface PersonalCenterViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *avatarImgV;
+@property (weak, nonatomic) IBOutlet UILabel *userNameLb;
+@property (weak, nonatomic) IBOutlet UILabel *userDescLb;
+
 
 @end
 
@@ -19,7 +22,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    // Do any additional setup after loading the view.
+    
+    self.viewModel.apiService.getDataSuccess = ^(id data) {
+        self.userNameLb.text = data[@"Data"][@"UserName"];
+        self.userDescLb.text = data[@"Data"][@"UserDesc"];
+    };
+    [self.viewModel.apiService loadData];
 }
 
 - (instancetype)initWithViewModel:(PersonalCenterViewModel *)viewModel{
@@ -27,10 +35,6 @@
         _viewModel = viewModel;
     }
     return self;
-}
-
-- (PersonalCenterViewModel *)viewModel{
-    return _viewModel;
 }
 
 @end
