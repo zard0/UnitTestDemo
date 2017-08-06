@@ -24,9 +24,12 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (instancetype)initWithViewModel:(TopListViewModel *)viewModel{
+    if (self = [super init]) {
+        _viewModel = viewModel;
+        _navigationService = _viewModel.navigationService;
+    }
+    return self;
 }
 
 #pragma mark - Table view data source
