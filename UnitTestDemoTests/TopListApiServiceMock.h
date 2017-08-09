@@ -14,4 +14,7 @@
  */
 @interface TopListApiServiceMock : NSObject<TopListApiServiceProtocol>
 
+/// 方便测试确认上层拿到数据后是否做了正确的事情
+@property (nonatomic, copy) void(^didLoadData)();
+
 @end

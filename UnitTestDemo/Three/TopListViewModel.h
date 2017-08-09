@@ -6,12 +6,13 @@
 //  Copyright © 2017年 Etop. All rights reserved.
 //
 
-#import "ApiServiceProtocol.h"
+#import "TopListApiServiceProtocol.h"
 #import "NavigationServiceProtocol.h"
 
 @interface TopListViewModel : NSObject
 
-@property (nonatomic, readonly, weak) id<ApiServiceProtocol> apiService;
+@property (nonatomic, readonly, copy) NSString *categoryId;
+@property (nonatomic, readonly, weak) id<TopListApiServiceProtocol> apiService;
 @property (nonatomic, readonly, weak) id<NavigationServiceProtocol> navigationService;
 
 
@@ -22,7 +23,10 @@
  @param navigationService <#navigationService description#>
  @return <#return value description#>
  */
-- (instancetype)initWithApiService:(id<ApiServiceProtocol>)apiService
+- (instancetype)initWithApiService:(id<TopListApiServiceProtocol>)apiService
+                 navigationService:(id<NavigationServiceProtocol>)navigationService;
+- (instancetype)initWithCategoryId:(NSString *)categoryId
+                        apiService:(id<TopListApiServiceProtocol>)apiService
                  navigationService:(id<NavigationServiceProtocol>)navigationService;
 
 @end

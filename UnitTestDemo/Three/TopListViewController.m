@@ -10,23 +10,35 @@
 
 @interface TopListViewController ()
 
+@property (nonatomic, strong) id<TopListApiServiceProtocol> apiService;
+@property (nonatomic, strong) id<NavigationServiceProtocol> navigationService;
+@property (nonatomic, strong) UILabel *noDataMsgLb;
+
 @end
 
 @implementation TopListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    if (self.viewModel && self.viewModel.apiService) {
+        [self.apiService getTopListWithCategoryId:self.viewModel.categoryId success:^(NSDictionary *response) {
+            
+        } failure:^(NSString *errorMsg) {
+            if (!self.noDataMsgLb) {
+                self.noDataMsgLb = [[UILabel alloc] initWithFrame:CGRectZero];
+            }
+            [self.view addSubview:self.noDataMsgLb];
+            self.noDataMsgLb.text = errorMsg;
+            [self.noDataMsgLb sizeToFit];
+            self.noDataMsgLb.center = CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2);
+        }];
+    }
 }
 
 - (instancetype)initWithViewModel:(TopListViewModel *)viewModel{
     if (self = [super init]) {
         _viewModel = viewModel;
+        _apiService = _viewModel.apiService;
         _navigationService = _viewModel.navigationService;
     }
     return self;

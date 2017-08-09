@@ -26,4 +26,20 @@
     return nil;
 }
 
+- (UILabel *)labelWithText:(NSString *)text{
+    for (UIView *subview in self.subviews) {
+        if ([subview isKindOfClass:[UILabel class]]) {
+            UILabel *label = (UILabel *)subview;
+            if ([label.text isEqualToString:text]) {
+                return label;
+            }else{
+                [subview labelWithText:text];
+            }
+        }else{
+            [subview labelWithText:text];
+        }
+    }
+    return nil;
+}
+
 @end

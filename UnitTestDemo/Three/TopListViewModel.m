@@ -10,8 +10,17 @@
 
 @implementation TopListViewModel
 
-- (instancetype)initWithApiService:(id<ApiServiceProtocol>)apiService navigationService:(id<NavigationServiceProtocol>)navigationService{
+- (instancetype)initWithApiService:(id<TopListApiServiceProtocol>)apiService navigationService:(id<NavigationServiceProtocol>)navigationService{
     if (self = [super init]) {
+        _apiService = apiService;
+        _navigationService = navigationService;
+    }
+    return self;
+}
+
+- (instancetype)initWithCategoryId:(NSString *)categoryId apiService:(id<TopListApiServiceProtocol>)apiService navigationService:(id<NavigationServiceProtocol>)navigationService{
+    if (self = [super init]) {
+        _categoryId = categoryId;
         _apiService = apiService;
         _navigationService = navigationService;
     }

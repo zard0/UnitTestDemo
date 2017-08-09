@@ -13,6 +13,8 @@
 		0A006D071F365563005BBEAF /* TopListViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A006D061F365563005BBEAF /* TopListViewModelTests.m */; };
 		0A006D091F3656DE005BBEAF /* TopListNavigationServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A006D081F3656DE005BBEAF /* TopListNavigationServiceTests.m */; };
 		0A006D101F36E01D005BBEAF /* TopListApiServiceMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A006D0F1F36E01D005BBEAF /* TopListApiServiceMock.m */; };
+		0A2678381F37884400F4B675 /* TopListApiServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2678371F37884400F4B675 /* TopListApiServiceTests.m */; };
+		0A26783B1F379CE900F4B675 /* TopListViewControllerMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A26783A1F379CE900F4B675 /* TopListViewControllerMock.m */; };
 		0A4172691F2A01FE00CB61A3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A41725B1F2A01FE00CB61A3 /* FirstViewController.m */; };
 		0A41726A1F2A01FE00CB61A3 /* PersonalCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A41725E1F2A01FE00CB61A3 /* PersonalCenterViewController.m */; };
 		0A41726B1F2A01FE00CB61A3 /* PersonalCenterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4172601F2A01FE00CB61A3 /* PersonalCenterViewModel.m */; };
@@ -65,6 +67,9 @@
 		0A006D0C1F36C492005BBEAF /* TopListApiServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopListApiServiceProtocol.h; sourceTree = "<group>"; };
 		0A006D0E1F36E01D005BBEAF /* TopListApiServiceMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopListApiServiceMock.h; sourceTree = "<group>"; };
 		0A006D0F1F36E01D005BBEAF /* TopListApiServiceMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopListApiServiceMock.m; sourceTree = "<group>"; };
+		0A2678371F37884400F4B675 /* TopListApiServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopListApiServiceTests.m; sourceTree = "<group>"; };
+		0A2678391F379CE900F4B675 /* TopListViewControllerMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopListViewControllerMock.h; sourceTree = "<group>"; };
+		0A26783A1F379CE900F4B675 /* TopListViewControllerMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopListViewControllerMock.m; sourceTree = "<group>"; };
 		0A41725A1F2A01FE00CB61A3 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		0A41725B1F2A01FE00CB61A3 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		0A41725D1F2A01FE00CB61A3 /* PersonalCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCenterViewController.h; sourceTree = "<group>"; };
@@ -145,6 +150,9 @@
 				0A006CFA1F36364A005BBEAF /* TopListViewControllerTests.m */,
 				0A006D061F365563005BBEAF /* TopListViewModelTests.m */,
 				0A006D081F3656DE005BBEAF /* TopListNavigationServiceTests.m */,
+				0A2678371F37884400F4B675 /* TopListApiServiceTests.m */,
+				0A2678391F379CE900F4B675 /* TopListViewControllerMock.h */,
+				0A26783A1F379CE900F4B675 /* TopListViewControllerMock.m */,
 				0A006D0E1F36E01D005BBEAF /* TopListApiServiceMock.h */,
 				0A006D0F1F36E01D005BBEAF /* TopListApiServiceMock.m */,
 			);
@@ -514,6 +522,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A2678381F37884400F4B675 /* TopListApiServiceTests.m in Sources */,
 				0A006CFB1F36364A005BBEAF /* TopListViewControllerTests.m in Sources */,
 				0A006D071F365563005BBEAF /* TopListViewModelTests.m in Sources */,
 				0A006D101F36E01D005BBEAF /* TopListApiServiceMock.m in Sources */,
@@ -526,6 +535,7 @@
 				0A41727A1F2A0E8C00CB61A3 /* UIView+TestingHelper.m in Sources */,
 				0AEB6E3F1F30661A00F739AD /* NSObject+Mock.m in Sources */,
 				0ADCC5751F2F086000BCE5B0 /* PersonalCenterViewModelMock.m in Sources */,
+				0A26783B1F379CE900F4B675 /* TopListViewControllerMock.m in Sources */,
 				0A006D091F3656DE005BBEAF /* TopListNavigationServiceTests.m in Sources */,
 				0AEB6E2D1F301B9000F739AD /* PersonalCenterApiServiceMock.m in Sources */,
 				0AEB6E391F30333000F739AD /* PersonalCenterViewControllerMock.m in Sources */,

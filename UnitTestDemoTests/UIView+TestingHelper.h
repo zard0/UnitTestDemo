@@ -14,6 +14,6 @@
 @interface UIView (TestingHelper)
 
 - (UIButton *)buttonWithText:(NSString *)text;
-
+- (UILabel *)labelWithText:(NSString *)text;
 
 @end
