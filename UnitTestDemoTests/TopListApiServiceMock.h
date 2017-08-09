@@ -16,5 +16,10 @@
 
 /// 方便测试确认上层拿到数据后是否做了正确的事情
 @property (nonatomic, copy) void(^didLoadData)();
+/// 被无回调异步方法执行后改变的属性
+@property (nonatomic, assign) NSInteger count;
+
+/// 无回调的异步方法
+- (void)doSomethingAsynWithoutCallBack;
 
 @end

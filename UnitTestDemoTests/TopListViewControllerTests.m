@@ -97,29 +97,38 @@
  单元测试测UI的行为是力不从心的，只有少数情况可以测一下，比如viewDidLoad方法的调用，其他生命周期方法，有些情况可以
  直接调用来观察，有时候不行，毕竟由系统托管的方法，还是不要随意由我们自己调用的好。单元测试主要用途是测试单个对象和其内部逻辑。
  */
-- (void)test_ShowRequestFailureMsg_WhenInitedWithCategoryId_100{
+
+- (void)test_viewDidLoad_WithFailureRequest{
     TopListApiServiceMock *apiServiceMock = [[TopListApiServiceMock alloc] init];
     TopListViewModel *viewModel = [[TopListViewModel alloc] initWithCategoryId:@"100" apiService:apiServiceMock navigationService:nil];
     XCTestExpectation *exp = [self expectationWithDescription:@"超时了"];
-    TopListViewControllerMock *mockVC = [[TopListViewControllerMock alloc] initWithViewModel:viewModel];
+    TopListViewController *vc = [[TopListViewController alloc] initWithViewModel:viewModel];
+    //要用异步测试机制，一定要显式地调动有异步操作的方法，否则不会执行异步测试机制
+    [vc viewDidLoad];
     __block BOOL called = NO;
-    apiServiceMock.didLoadData = ^{
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(6.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         called = YES;
-        UILabel *msgLb = [mockVC.view labelWithText:@"网络出问题了"];
+        UILabel *msgLb = [vc.view labelWithText:@"网络出问题了"];
         XCTAssertNotNil(msgLb);
         [exp fulfill];
-    };
-    [[UIApplication sharedApplication].keyWindow addSubview:mockVC.view];
-    [[UIApplication sharedApplication].keyWindow makeKeyAndVisible];
+    });
+    
+    
     [self waitForExpectationsWithTimeout:10 handler:^(NSError * _Nullable error) {
-        //XCTAssertTrue(called);
-        [mockVC.view removeFromSuperview];
+        XCTAssertTrue(called);
+        [vc.view removeFromSuperview];
     }];
 }
 
-
-
 @end
+
+
+
+
+
+
+
 
 
 
